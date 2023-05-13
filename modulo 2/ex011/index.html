@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+     <h1> imagens dinamicas</h1>
+     <p>tente abrir este site em varios dispostitivos diferentes ou simplesmente almente e diminua o tamanho do seu <b>navegador</b></p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/m.png" type="image/png">
+        <img src="imagens/g.png" alt="img-flexivel">
+    </picture>
+
+       <h1>reproduzindo audio</h1>
+       <p> vamos aprender reproduzir audio</p>
+
+       <!-- <audio src="audio/muito cache demo v2.wav" controls autoplay></audio>  -->
+      <audio preload="auto" autoplay controls>
+         <source src="audio/com o perigo previa.mp3" controls type="audio/mpeg">
+        <source src="audio/com perigo.wav" crontrols type="audio/wav"> 
+      </audio>
+
+</body>
+</html>
