@@ -8,18 +8,27 @@
     <style>
         body{
             height: 97vh;
-            background-color: black;
+            /* background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
-            /* contain mostra a foto sem fazer cortes
-            cover mostra a foto de em qualquer tela fazendo cortes */
+            background-attachment: fixed; < -usar (shorthand )
 
+            short-hand - background 
+              color > image > position > repeat > [size] > attachment 
+            
+             background-size: (*) - *contain* mostra a foto sem fazer cortes
+            *cover* mostra a foto de em qualquer tela fazendo cortes */
+
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat  fixed;
+            background-size: cover;
+            
         }
         main{
-            background-color: white;
-            width: 300px;
+            background-color: transparent;
+            color:rgb(255, 255, 255);
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border-radius: 15px;
@@ -30,7 +39,11 @@
 <body>
     <main>
         <h1>teste de imagem de fundo</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam neque corporis illo ipsum incidunt commodi sapiente veniam voluptatem quidem aperiam, doloremque, nemo explicabo tenetur? A qui eum exercitationem ex? Eaque?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut eveniet dolor nam ex beatae culpa dicta cupiditate velit ducimus illo nobis numquam autem repellat, quae, delectus nemo reprehenderit quasi </p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam neque corporis illo ipsum incidunt commodi sapiente veniam voluptatem quidem aperiam, doloremque, nemo explicabo tenetur? A qui eum exercitationem ex? Eaque?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut eveniet dolor nam ex beatae culpa dicta cupiditate velit ducimus illo nobis numquam autem repellat, quae, delectus nemo reprehenderit quasi 
+            <br>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, autem ratione expedita culpa totam numquam ad est dicta eum asperiores eaque, officia reprehenderit incidunt labore quidem suscipit sit nulla velit Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni asperiores quam molestiae exercitationem accusamus delectus odio quasi libero itaque culpa voluptatem omnis maiores saepe necessitatibus iure, ad harum ea! Tempora! Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quos magni tempora fugit! Rem ipsam nihil non quis quod consectetur explicabo! Similique, odit pariatur doloremque dolore reiciendis maxime magnam natus.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum quia iste ducimus ea a, debitis, et velit repellendus non dolores reprehenderit esse quod vero tenetur eos fugiat tempore distinctio totam?<br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, accusamus explicabo. Ut quibusdam voluptate tempora iure ipsum quae magni, explicabo est amet sapiente! Voluptatibus omnis cupiditate nobis. Placeat, sequi temporibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quibusdam pariatur officiis ipsum tempora architecto fugiat quia possimus placeat deserunt necessitatibus, reiciendis suscipit praesentium neque iure nulla totam unde animi.
+        </p>
     </main>
 </body>
 </html>
