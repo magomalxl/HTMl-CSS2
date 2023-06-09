@@ -8,12 +8,15 @@
     <title>Uso de tabelas</title>
     <style>
         body {
+            background-color: rgb(247, 182, 121);
             font-family: Arial, Helvetica, sans-serif;
         }
 
         table {
-            width: 400px;
+            margin: auto;
+            width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td,
@@ -23,10 +26,42 @@
 
         }
 
-        thead, tfoot {
-            background-color: gray;
+        td.num {
+            text-align: right;
+        }
+
+
+        thead,
+        tfoot {
+            background-color: rgb(77, 75, 75);
             color: white;
 
+        }
+
+        tbody>tr:nth-child(odd)
+
+        /*2n-1*/
+            {
+            background-color: lightgray;
+        }
+
+        tbody>tr:nth-child(2n)
+
+        /*2n*/
+            {
+            background-color: rgb(255, 255, 255);
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: lightgray;
+            padding: 10px;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: rgb(92, 91, 91);
         }
     </style>
 </head>
@@ -44,10 +79,11 @@
     -->
 
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th> População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
 
@@ -63,7 +99,7 @@
             </tr>
             <tr>
                 <td>Rio de janeiro
-                    <td class="num">16 497 395</td>
+                <td class="num">16 497 395</td>
                 </td>
             </tr>
             <tr>
@@ -162,18 +198,33 @@
                 <td>Roraima</td>
                 <td class="num">500 826</td>
             </tr>
-            
+
         </tbody>
 
 
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
-                <td>207.750.291 </td>
+                <th scope="row">Total de habitantes</th>
+                <td class="num">
+                    <strong>207.750.291</strong>
+                </td>
             </tr>
 
         </tfoot>
     </table>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum unde, cumque tempore similique, reiciendis quae impedit nihil suscipit et, amet nisi temporibus iusto vero! Rerum architecto sequi asperiores error quos?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo quis tempore molestias perferendis quia tempora fugiat alias eaque aliquid quaerat quos ipsum, hic numquam provident culpa ea asperiores incidunt saepe!quos?Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quis reprehenderit laborum omnis suscipit eum, ipsa esse modi, reiciendis deserunt voluptatum in pariatur libero ea amet aspernatur corrupti. Necessitatibus, praesentium!
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum unde, cumque tempore similique, reiciendis quae impedit nihil suscipit et, amet nisi temporibus iusto vero! Rerum architecto sequi asperiores error quos?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo quis tempore molestias perferendis quia tempora fugiat alias eaque aliquid quaerat quos ipsum, hic numquam provident culpa ea asperiores incidunt saepe!quos?Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quis reprehenderit laborum omnis suscipit eum, ipsa esse modi, reiciendis deserunt voluptatum in pariatur libero ea amet aspernatur corrupti. Necessitatibus, praesentium!
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum unde, cumque tempore similique, reiciendis quae impedit nihil suscipit et, amet nisi temporibus iusto vero! Rerum architecto sequi asperiores error quos?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo quis tempore molestias perferendis quia tempora fugiat alias eaque aliquid quaerat quos ipsum, hic numquam provident culpa ea asperiores incidunt saepe!quos?Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quis reprehenderit laborum omnis suscipit eum, ipsa esse modi, reiciendis deserunt voluptatum in pariatur libero ea amet aspernatur corrupti. Necessitatibus, praesentium!
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum unde, cumque tempore similique, reiciendis quae impedit nihil suscipit et, amet nisi temporibus iusto vero! Rerum architecto sequi asperiores error quos?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo quis tempore molestias perferendis quia tempora fugiat alias eaque aliquid quaerat quos ipsum, hic numquam provident culpa ea asperiores incidunt saepe!quos?Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quis reprehenderit laborum omnis suscipit eum, ipsa esse modi, reiciendis deserunt voluptatum in pariatur libero ea amet aspernatur corrupti. Necessitatibus, praesentium!
+    </p>
 </body>
 
 </html>
